@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "header.html" . }}
+        {{ block "main" . }}{{ end }}
+        {{ partial "footer.html" . }}
+        {{- range $filename := .Site.Params.plugins_html -}}
+        {{- partial $filename $ -}}
+        {{- end -}}
+        {{- range .Site.Params.plugins_js -}}
+        <script defer type="text/javascript" src="{{ . }}"></script>
+        {{- end -}}
+        <script defer type="text/javascript" src="{{ "js/menu.js" | relURL }}"></script>
+    </body>
+</html>
