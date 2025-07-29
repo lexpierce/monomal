@@ -11,16 +11,15 @@
 		border-radius: 6px;
 		width: 100%;
 		height: auto;
-		max-width: 1000px;
+		max-width: 700px;
 	}
 	.body {
 		font-family: system-ui, sans-serif;
 		font-size: 18px;
-		background: #fff;
-		color: #333;
+		max-width: 700px;
 	}
 	.intro {
-		border-bottom: 1px solid #666;
+		border-bottom: 1px solid #d4d4d6;
 		padding-bottom: 20px;
 	}
 	.post {
@@ -28,12 +27,11 @@
 		margin-bottom: 10px;
 	}
 	.footer {
-		border-top: 1px solid #666;
+		border-top: 1px solid #d4d4d6;
 		padding-top: 5px;
 		margin-top: 5px;
 	}
 </style>
-
 <div class="body">
 	<h2>{{ .Site.Title }}</h2>
 	{{- if gt (len .Intro) 0 }}
@@ -44,11 +42,12 @@
 
 	{{- range .Pages }}
 	<div class="post">
-		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "Jan 2, 2006" }} ↓</a>
+		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "January 2, 2006" }}</a>
 		{{- if .Title }}
 		<h3>{{ .Title }}</h3>
 		{{- end }}
-		{{ .Content }}
+		{{ .Summary }}
+		<p><a href="{{ .Permalink }}">Continue reading online →</a></p>
 		{{- if gt (len .Params.audio) 0 }}
 		<a href="{ .Permalink }">Audio</a>
 		{{- end }}
