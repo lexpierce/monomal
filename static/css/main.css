@@ -1,7 +1,7 @@
 :root {
   color-scheme: light dark;
-  --sans-serif-font: "Fira Code", "Berkeley Mono", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --mono-space-font: "Fira Code", "Berkeley Mono", SFMono-Regular, ui-monospace, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  --sans-serif-font: "Berkeley Mono", "Fira Code", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono-space-font: "Berkeley Mono", "Fira Code", SFMono-Regular, ui-monospace, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --header-width: 94rem;
