@@ -76,6 +76,19 @@ p {
   overflow-wrap: break-word;
 }
 
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5.
+h6 {
+  text-wrap: balance;
+}
+
 #root,
 #__next {
   isolation: isolate;
@@ -106,6 +119,7 @@ body {
   text-rendering: geometricPrecision;
   font-feature-settings: "kern" 1;
   word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
 }
 
 ::-moz-selection {
