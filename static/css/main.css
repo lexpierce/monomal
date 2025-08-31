@@ -76,19 +76,6 @@ p {
   overflow-wrap: break-word;
 }
 
-p {
-  text-wrap: pretty;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5.
-h6 {
-  text-wrap: balance;
-}
-
 #root,
 #__next {
   isolation: isolate;
@@ -118,8 +105,8 @@ body {
   margin: 0;
   text-rendering: geometricPrecision;
   font-feature-settings: "kern" 1;
-  word-wrap: break-word;
   -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
 }
 
 ::-moz-selection {
@@ -484,6 +471,7 @@ single article {
 article img,
 article video {
   border-radius: 1rem;
+  display: block;
   height: auto;
   margin: 3rem auto;
   max-width: 100%;
