@@ -1,5 +1,5 @@
 {
-	"version": "2.6.6",
+	"version": "2.7.1",
 	"title": "monomal",
 	"description": "A minimal, simple and clean Micro.blog theme, modifed to be 100% monospaced.",
 	"fields": [
@@ -37,6 +37,12 @@
 		  "placeholder": "Enter a full URL to an image. Ignored if avatar is hidden."
 		},
 		{
+		  "field": "params.pinned_category",
+		  "label": "Pinned post category",
+		  "type": "string",
+		  "placeholder": "Category for the latest pinned post. Leave blank otherwise."
+		},
+		{
 		  "field": "params.home_category",
 		  "label": "Home page categories",
 		  "type": "string",
@@ -60,6 +66,11 @@
 		{
 		  "field": "params.show_categories",
 		  "label": "Show categories on archives page",
+		  "type": "boolean"
+		},
+		{
+		  "field": "params.show_category_count",
+		  "label": "Show post count for archive page categories",
 		  "type": "boolean"
 		},
 		{
