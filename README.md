@@ -1,5 +1,7 @@
 # Monomal
 
+![monomal](https://raw.githubusercontent.com/lexpierce/monomal/main/icon.jpg)
+
 A monospaced adatation of mnml by Alexander Sisco. All credit goes to jim mitchell. Original README.md below.
 
 --
