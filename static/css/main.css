@@ -5,7 +5,7 @@
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --header-width: 94rem;
-  --site-width: 64rem;
+  --site-width: 68rem;
   --photos-wide: 120rem;
   --border-radius: 0.6rem;
 }
@@ -18,7 +18,7 @@
     --link: #0d88d8;
     --link-hover: #101115;
     --accent-1: #f6f6f6;
-    --accent-2: #d4d4d6;
+    --accent-2: #e2e2e4;
     --accent-3: #84868b;
     --highlight: #e3e3e6;
   }
@@ -86,6 +86,8 @@ html {
   font-family: var(--sans-serif-font);
   font-size: 10px;
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 *,
@@ -440,6 +442,7 @@ single article {
   border-radius: var(--border-radius);
   margin-left: -2rem;
   margin-right: -2rem;
+  margin-top: 2rem;
   width: calc(100% + 4rem);
   padding: 1.5rem 2rem 0 2rem;
   position: relative;
@@ -518,7 +521,7 @@ a.category:visited,
 .category-list button {
   background-color: var(--accent-1);
   border-radius: var(--border-radius);
-  border: 1px solid var(--accent-1);
+  border: 1px solid var(--accent-2);
   color: var(--accent-3);
   display: inline-block;
   font-size: 1.6rem;
@@ -526,6 +529,11 @@ a.category:visited,
   margin: 0 1px 5px 0;
   padding: 0 8px;
   text-decoration: none;
+}
+
+a.category:link,
+a.category:visited {
+  font-size: 1.4rem;
 }
 
 a.category:hover,
@@ -557,7 +565,7 @@ a.category:active {
 .category-list button {
   background-color: var(--accent-1);
   border-radius: var(--border-radius);
-  border: 1px solid var(--accent-1);
+  border: 1px solid var(--accent-2);
   color: var(--accent-3);
   display: inline-block;
   line-height: 1.6;
@@ -589,8 +597,9 @@ a.category:active {
 
 .microblog_narration_button:hover,
 .microblog_narration_button:active {
-  background: var(--accent-2);
-  border-color: var(--accent-3);
+  background: var(--link);
+  border-color: var(--link);
+  color: var(--background);
 }
 
 .microblog_narration_button svg {
@@ -603,6 +612,7 @@ a.category:active {
 
 .microblog_post {
   background: var(--accent-1);
+  border: 1px solid var(--accent-2);
   border-radius: var(--border-radius);
   margin-bottom: 1rem;
   padding: 2.3rem 2rem;
@@ -662,6 +672,7 @@ a.category:active {
 
 .microblog_reply_form {
   background: var(--accent-1);
+  border: 1px solid var(--accent-2);
   border-radius: var(--border-radius);
   padding: 1rem 2rem;
 }
@@ -775,6 +786,7 @@ main.archive .entry p {
 
 #guestbooks___guestbook-messages-container > div {
   background: var(--accent-1);
+  border: 1px solid var(--accent-2);
   border-radius: var(--border-radius);
   margin: 1.5rem 0;
   padding: 0.1rem 3rem 2rem;
@@ -831,21 +843,6 @@ footer p {
   fill: var(--background);
 }
 
-.social a {
-  margin: 0 5px;
-  font-size: 1.8rem;
-}
-
-.social a:link,
-.social a:visited {
-  color: var(--accent-3);
-}
-
-.social a:hover,
-.social a:active {
-  color: var(--link-hover);
-}
-
 .tinylytics_kudos,
 .tiny_hits,
 a.conversation-on-mb,
@@ -853,7 +850,7 @@ a.reply-on-mastodon,
 a.reply-by-email {
   background-color: var(--accent-1);
   border-radius: var(--border-radius);
-  border: 1px solid var(--accent-1);
+  border: 1px solid var(--accent-2);
   color: var(--accent-3);
   display: inline-block;
   font-size: 1.6rem;
