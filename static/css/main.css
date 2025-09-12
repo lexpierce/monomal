@@ -524,8 +524,8 @@ a.category:visited,
   border: 1px solid var(--accent-2);
   color: var(--accent-3);
   display: inline-block;
-  font-size: 1.6rem;
-  line-height: 1.4;
+  font-size: 1.4rem;
+  line-height: 1.6;
   margin: 0 1px 5px 0;
   padding: 0 8px;
   text-decoration: none;
@@ -889,28 +889,41 @@ a.tinylytics_webring {
 }
 
 .microblog_collection {
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
-  margin: 0 -3px !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1rem !important;
+  width: 100% !important;
+  margin: 3rem auto !important;
+  width: 100% !important;
 }
 
 .microblog_collection img {
-  border-radius: 1rem !important;
-  border: 3px solid transparent;
-  cursor: pointer;
-  display: inline !important;
-  height: 150px !important;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+  aspect-ratio: 1 / 1;
   margin: 0 !important;
-  object-fit: cover;
-  padding: 0;
-  width: 25% !important;
-  transition: filter 0.25s ease-in-out;
+  border-radius: var(--border-radius) !important;
 }
 
 .microblog_collection img:hover {
+  -moz-filter: brightness(70%);
+  -webkit-filter: brightness(70%);
   filter: brightness(70%);
+  transition: ease-in-out 0.25s;
 }
+
+@media (max-width: 600px) {
+  .microblog_collection {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .microblog_collection {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+ }
 
 .microblog_lightbox_nav {
   font-size: 2rem !important;
@@ -996,11 +1009,6 @@ img.bookshelf__cover {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-5px) rotate(-45deg);
-  }
-
-  .microblog_collection img {
-    height: 110px !important;
-    width: 33% !important;
   }
 
   .pinned {
