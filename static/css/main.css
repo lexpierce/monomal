@@ -224,17 +224,44 @@ blockquote {
 table {
   border-collapse: collapse;
   width: 100%;
+  margin: 3rem 0;
 }
 
-th {
+tbody tr {
+  background: var(--background);
+}
+
+tbody tr:nth-child(even) {
   background: var(--accent-1);
 }
 
 th,
 td {
-  border: 1px solid var(--accent-2);
-  padding: 6px;
+  border-right: 1px solid var(--accent-2);
+  border-bottom: 1px solid var(--accent-2);
+  padding: 8px;
   text-align: left;
+}
+
+th {
+  background: var(--accent-1);
+  border-bottom: 2px solid var(--accent-2);
+}
+
+th:last-child,
+td:last-child {
+  border-right: none;
+}
+
+tbody tr:hover {
+  background-color: var(--link);
+  color: var(--background);
+  transition: ease-in-out 0.25s;
+}
+
+tbody tr:hover a {
+  color: var(--background);
+  text-decoration: underline;
 }
 
 code,
@@ -268,7 +295,7 @@ pre code {
   background: none;
   border: none;
   color: inherit;
-  padding: 0;
+  padding: 0 2rem;
   white-space: pre;
 }
 
@@ -504,7 +531,7 @@ article video {
   display: block;
   height: auto;
   margin: 3rem auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 article ul li,
@@ -923,7 +950,11 @@ a.tinylytics_webring {
   .microblog_collection {
     grid-template-columns: repeat(1, 1fr) !important;
   }
- }
+}
+
+.microblog_collection img:hover {
+  filter: brightness(70%);
+}
 
 .microblog_lightbox_nav {
   font-size: 2rem !important;
