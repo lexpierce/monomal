@@ -7,7 +7,7 @@
   --header-width: 94rem;
   --site-width: 68rem;
   --photos-wide: 120rem;
-  --border-radius: 0.6rem;
+  --border-radius: 0;
 }
 
 @media (prefers-color-scheme: light) {
@@ -274,7 +274,7 @@ tt {
 
 pre {
   background: #101115;
-  border-radius: 0.5rem;
+  border-radius: 0;
   color: #f8f8f8;
   line-height: 1.5;
   margin: 3rem 0;
@@ -491,7 +491,7 @@ single article {
 
 .pinned-badge {
   background: var(--link);
-  border-radius: 3rem;
+  border-radius: 0;
   color: var(--background);
   font-size: 1.6rem;
   position: absolute;
@@ -754,7 +754,7 @@ input.subscribe-submit {
 
 .info {
   background-color: var(--accent-1);
-  border-radius: 1rem;
+  border-radius: 0;
   color: var(--text);
   padding: 2rem 3rem;
   text-align: center;
@@ -847,7 +847,7 @@ footer p {
 
 .to-top {
   background: var(--text);
-  border-radius: 50%;
+  border-radius: 0;
   border: none;
   bottom: 1.75rem;
   box-shadow: none;
