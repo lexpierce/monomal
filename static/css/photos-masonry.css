@@ -29,7 +29,7 @@ main.photos-wide .masonry-grid {
 
 .masonry-grid li {
   background: var(--accent-1);
-  border-radius: 1rem;
+  border-radius: 0;
   break-inside: avoid;
   margin-bottom: 1rem;
   overflow: hidden;
