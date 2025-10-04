@@ -1,6 +1,6 @@
 :root {
   color-scheme: light dark;
-  --sans-serif-font: "Berkeley Mono", "Fira Code", -SFMono-Regular, ui-monospace, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  --sans-serif-font: "Berkeley Mono", "Fira Code", SFMono-Regular, ui-monospace, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   --mono-space-font: "Berkeley Mono", "Fira Code", SFMono-Regular, ui-monospace, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   --font-weight-normal: 300;
   --font-weight-bold: 700;
