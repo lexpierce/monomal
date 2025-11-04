@@ -140,7 +140,10 @@ a:hover,
 a:active,
 .category-list button:hover,
 .category-list button:active {
-  transition: color 0.15s ease-in-out, background 0.15s ease-in-out, border 0.15s ease-in-out;
+  transition:
+    color 0.15s ease-in-out,
+    background 0.15s ease-in-out,
+    border 0.15s ease-in-out;
 }
 
 h1,
@@ -198,7 +201,7 @@ figcaption {
   display: block;
   font-size: 1.4rem;
   margin: -2rem 0 3rem;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   text-align: center;
 }
 
@@ -509,13 +512,13 @@ single article {
 
 .pinned {
   background: var(--accent-1);
-  border: 1px solid var(--accent-2);
+  border: 2px solid var(--accent-2);
   border-radius: var(--border-radius);
   margin-left: -2rem;
   margin-right: -2rem;
   margin-top: 2rem;
   width: calc(100% + 4rem);
-  padding: 1.5rem 2rem 0 2rem;
+  padding: 1rem 1.8rem 0 1.8rem;
   position: relative;
 }
 
@@ -566,7 +569,7 @@ single article {
 
 .sep {
   color: var(--accent-3);
-  margin: 0 .25rem;
+  margin: 0 0.25rem;
 }
 
 article img,
@@ -590,7 +593,7 @@ article img.align-none {
 article img.align-left {
   display: unset;
   float: left;
-  margin: .7rem 2rem 1rem 0;
+  margin: 0.7rem 2rem 1rem 0;
   max-width: 100%;
   text-align: left;
   width: revert-layer;
@@ -600,7 +603,7 @@ article img.align-left {
 article img.align-right {
   display: unset;
   float: right;
-  margin: .7rem 0 1rem 2rem;
+  margin: 0.7rem 0 1rem 2rem;
   max-width: 100%;
   text-align: right;
   width: revert-layer;
@@ -673,7 +676,10 @@ article ol li {
     border: none;
     padding: 1px 3px;
     color: #777;
-    transition: color 0.15s ease-in-out, background 0.15s ease-in-out, border 0.15s ease-in-out;
+    transition:
+      color 0.15s ease-in-out,
+      background 0.15s ease-in-out,
+      border 0.15s ease-in-out;
     border: 2px solid #161616;
     border-radius: 6px;
 }
@@ -713,7 +719,7 @@ a.category:visited,
 
 .category-list button .post-count {
   font-size: 1.4rem;
-  margin-left: .1rem;
+  margin-left: 0.1rem;
 }
 
 a.category:hover,
@@ -937,7 +943,7 @@ sup a:active {
 .footnotes p {
   margin: 0;
   line-height: 1.2;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 .footnotes ol {
