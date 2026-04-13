@@ -53,7 +53,7 @@
     </div>
     {{- end }}
     {{- if or (.NextInSection) (.PrevInSection) }}
-    <nav class="main-nav">
+    <nav class="main-nav visually-hidden">
         <ul>
             <li>{{ if .PrevInSection }}<a href="{{ .PrevInSection.Permalink }}">← {{ T "Older" }}</a>{{ end }}</li>
             <li>{{ if .NextInSection }}<a href="{{ .NextInSection.Permalink }}">{{ T "Newer" }} →</a>{{ end }}</li>

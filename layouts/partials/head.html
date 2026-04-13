@@ -3,12 +3,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="view-transition" content="same-origin" />
-  <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ trim (.Title | plainify) " " }} | {{ .Site.Title }}{{ else }}{{ delimit (split (.Summary | plainify) " " | first 5) " " }} … | {{ .Site.Title }}{{ end }}{{ end }}</title>
+  <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ trim (.Title | plainify | htmlUnescape) " " }} | {{ .Site.Title }}{{ else }}{{ delimit (split (.Summary | plainify | htmlUnescape) " " | first 5) " " }} … | {{ .Site.Title }}{{ end }}{{ end }}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-  <meta property="og:title" content="{{ or .Title .Site.Title | truncate 55 | plainify }}">
-  <meta name="twitter:title" content="{{ or .Title .Site.Title | plainify }}">
+  <meta property="og:title" content="{{ or .Title .Site.Title | truncate 55 | plainify | htmlUnescape }}">
+  <meta name="twitter:title" content="{{ or .Title .Site.Title | plainify | htmlUnescape }}">
   <meta name="twitter:card" content="summary">
   {{- if .IsHome }}
   <meta name="description" content="{{ .Site.Params.itunes_description | truncate 160 | plainify }}">
