@@ -33,7 +33,7 @@
   <meta name="fediverse:creator" content="{{ $creator }}" />
   {{- end }}
   <link rel="canonical" href="{{ .Permalink }}">
-  <link rel="author" href="humans.txt" />
+  <link rel="author" href="{{ "humans.txt" | relURL }}" />
   <link href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}" rel="preload stylesheet" as="style">
   {{- if .Site.Params.masonry_layout }}
   <link href="{{ "css/photos-masonry.css" | relURL }}?{{ .Site.Params.theme_seconds }}"rel="preload stylesheet" as="style">
